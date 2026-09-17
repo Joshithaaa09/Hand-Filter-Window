@@ -144,13 +144,13 @@ it in the `FILTERS` dict.
 ## Testing
 
 The test suite runs **headless** — every test uses the synthetic hand
-generator in `tests/fake_hand.py`, so no webcam, display, or model is needed.
+generator in `fake_hand.py`, so no webcam, display, or model is needed.
 
 ```bash
-python tests/run_all.py
+python run_all.py
 ```
 
-28 checks across 4 suites cover pose detection, the orb state machine, the
+29 checks across 4 suites cover pose detection, the orb state machine, the
 new gesture actions, and dual-orb merge/absorb behaviour. CI runs this on
 Python 3.9–3.12 for Linux and Windows on every push.
 
@@ -180,7 +180,9 @@ Hand-Filter-Window/
 ├── README.md
 ├── CONTRIBUTING.md
 ├── .gitignore
-└── ci.yml
+└── .github/
+    └── workflows/
+        └── ci.yml
 ```
 
 ## Troubleshooting
