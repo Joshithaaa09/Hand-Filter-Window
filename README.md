@@ -1,3 +1,4 @@
+[![CI](https://github.com/Joshithaaa09/Hand-Filter-Window/actions/workflows/ci.yml/badge.svg)](https://github.com/Joshithaaa09/Hand-Filter-Window/actions/workflows/ci.yml)
 <div align="center">
 
 # Hand Filter Window
