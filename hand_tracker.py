@@ -19,7 +19,7 @@ Things that used to bite (kept for whoever hacks on this next):
   back onto the full-resolution frame for free - no accuracy hit worth
   worrying about, ~3-4x faster.
 """
-
+import os
 import time
 
 import cv2
@@ -34,7 +34,8 @@ from mediapipe.tasks.python.vision import (
     drawing_utils,
 )
 
-MODEL_PATH = "models/hand_landmarker.task"
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+MODEL_PATH = os.path.join(BASE_DIR, "models", "hand_landmarker.task")
 DEFAULT_TRACK_WIDTH = 320
 
 
