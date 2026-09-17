@@ -70,7 +70,7 @@ The `hand_landmarker.task` model is downloaded at set-up (it's a ~8 MB
 binary and is gitignored):
 
 ```bash
-python scripts/fetch_model.py
+python fetch_model.py
 ```
 
 Or download it manually from
@@ -154,21 +154,33 @@ python tests/run_all.py
 new gesture actions, and dual-orb merge/absorb behaviour. CI runs this on
 Python 3.9–3.12 for Linux and Windows on every push.
 
-## Project layout
+## Project Structure
 
-```
-main.py             app loop / entry point
-camera_stream.py    threaded webcam capture
-hand_tracker.py     MediaPipe Hands wrapper
-gestures.py         pose + gesture detection (fist, prayer, pinch, point, gun, ...)
-filters.py          the visual effects
-compositor.py       smoothing + mask compositing
-ball.py             the orb: state machine + supersampled rendering
-ball_manager.py     dual-orb orchestration (spawn / merge / absorb / events)
-config.py           JSON persistence for user settings
-hud.py              translucent HUD + onboarding hints
-recorder.py         MP4/AVI output recording with codec fallback
-tests/              synthetic-hand test suite (no camera required)
+```text
+Hand-Filter-Window/
+│
+├── main.py
+├── camera_stream.py
+├── hand_tracker.py
+├── gestures.py
+├── filters.py
+├── compositor.py
+├── ball.py
+├── ball_manager.py
+├── fake_hand.py
+├── fetch_model.py
+├── config.py
+├── hud.py
+├── recorder.py
+│
+├── models/
+│   └── hand_landmarker.task
+│
+├── requirements.txt
+├── README.md
+├── CONTRIBUTING.md
+├── .gitignore
+└── ci.yml
 ```
 
 ## Troubleshooting
