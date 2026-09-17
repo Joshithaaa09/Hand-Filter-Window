@@ -5,15 +5,10 @@ Video recording for the app's composited output.
 
 Behaviour
 ---------
-- Always writes to the fixed file ``hand_filter_recording.mp4`` in the
-  project folder, overwriting the previous take (nothing accumulates,
-  you always know where the video is).
-- Picks a codec/container the current OpenCV build actually supports:
-  ``mp4v`` / ``avc1`` (.mp4) first, falling back to ``MJPG`` (.avi) and
-  finally ``LAGS``-less stock ``XVID`` if needed.
-- ``stop()`` finalizes the file and returns the path that was written.
-  The codec that was actually used is available as ``.codec``.
-"""
+- Writes to ``hand_filter_recording.mp4`` by default, or to a custom
+  path supplied by the caller.
+- Tries multiple codecs supported by the current OpenCV build and falls
+  back to AVI when MP4 codecs are unavailable.
 
 import os
 
