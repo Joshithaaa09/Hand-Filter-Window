@@ -18,7 +18,7 @@ The app is deliberately split into small, single-purpose modules:
 | `ball.py` | The orb: state machine + supersampled rendering |
 | `ball_manager.py` | Dual-orb orchestration (spawn / merge / absorb) |
 | `config.py`, `hud.py`, `recorder.py` | Settings, HUD, video output |
-| `tests/` | Synthetic-hand test suite (no webcam required) |
+`test_*.py`, `fake_hand.py` | Synthetic-hand test suite (no webcam required) |
 
 ## Setting up a dev environment
 
@@ -26,23 +26,23 @@ The app is deliberately split into small, single-purpose modules:
 python -m venv .venv
 .venv\Scripts\activate            # Windows
 pip install -r requirements.txt
-python scripts/fetch_model.py     # downloads the MediaPipe model
+python fetch_model.py     # downloads the MediaPipe model
 ```
 
 ## Running the tests
 
 ```bash
-python tests/run_all.py
+python run_all.py
 ```
 
-Every test uses the synthetic hand generator in `tests/fake_hand.py`, so the
+Every test uses the synthetic hand generator in `fake_hand.py`, so the
 suite runs headless — no camera, no display, no model file. It must stay that
 way. If a feature needs hardware, test the logic parts headless and describe
 the manual check in the PR instead.
 
 ## Before you open a PR
 
-1. **Run the full suite** — `python tests/run_all.py` and make sure every
+1. **Run the full suite** — `python run_all.py` and make sure every
    suite reports pass.
 2. **Keep behavior relative to hand size.** Thresholds in `gestures.py` are
    scaled by `hand_scale()`. Please don't introduce fixed pixel distances.
