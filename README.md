@@ -199,3 +199,13 @@ Hand-Filter-Window/
 <p align="center">
   Made with <a href="https://github.com/Joshithaaa09">Joshitha Garapati</a>
 </p>
+
+## Author
+
+**Joshitha Garapati**
+
+GitHub: https://github.com/Joshithaaa09
+
+## License
+
+This project is shared for educational and portfolio purposes. The application builds on the original Hand Filter Window project while documenting my implementation and modifications in this repository.
