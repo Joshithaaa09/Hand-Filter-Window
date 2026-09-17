@@ -9,6 +9,7 @@ Behaviour
   path supplied by the caller.
 - Tries multiple codecs supported by the current OpenCV build and falls
   back to AVI when MP4 codecs are unavailable.
+"""
 
 import os
 
