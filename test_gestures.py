@@ -11,7 +11,7 @@ from gestures import (
     is_pointing, is_gun, is_thumbs_up, is_victory, is_flat_hand,
     is_prayer_pose, get_frame_corners, WaveDetector, ClapDetector,
 )
-from tests.fake_hand import make_hand, hand
+from fake_hand import make_hand, hand
 
 scl = 100.0
 
