@@ -8,13 +8,7 @@ Track your hands with a webcam, shape a filter window with your fingertips,
 and summon glowing "filter orbs" that you can carry, throw, stretch, merge,
 and even shoot at each other — all without touching a keyboard.
 
-</div>
 
-![Python](https://img.shields.io/badge/Python-3.9+-blue.svg)
-![License](https://img.shields.io/badge/License-MIT-green.svg)
-[![CI](https://github.com/Ali533-blip/hand-filter-window/actions/workflows/ci.yml/badge.svg)](https://github.com/Ali533-blip/hand-filter-window/actions)
-
----
 
 ## What it does
 
