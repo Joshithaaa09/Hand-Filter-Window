@@ -12,7 +12,7 @@ venv/
 env/
 ENV/
 
-# MediaPipe model (downloaded at setup — see scripts/fetch_model.py)
+# MediaPipe model (downloaded at setup — see fetch_model.py)
 models/*.task
 models/
 
