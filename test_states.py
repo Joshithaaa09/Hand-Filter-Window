@@ -8,7 +8,7 @@ import numpy as np
 from gestures import WRIST, hand_centroid, hand_scale
 from ball import BallSystem, STATE_GONE, STATE_HELD, STATE_PINCHED, STATE_DESTROY, \
     STATE_FLIGHT, STATE_CATCH, STATE_STRETCH
-from tests.fake_hand import hand, make_hand, frame
+from fake_hand import hand, make_hand, frame
 
 DT = 1 / 60
 scl = 100.0
