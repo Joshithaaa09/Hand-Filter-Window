@@ -30,7 +30,7 @@ jobs:
           python -m pip install "opencv-python>=4.8.0" "numpy>=1.24.0"
 
       - name: Run test suite
-        run: python tests/run_all.py
+        run: python run_all.py
 
   imports:
     name: Full deps resolve + import (py3.11 · ubuntu)
