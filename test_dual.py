@@ -8,7 +8,7 @@ import numpy as np
 from gestures import hand_centroid
 from ball_manager import BallManager
 from ball import STATE_GONE, STATE_HELD, STATE_TWIN, STATE_ABSORB, STATE_FLIGHT
-from tests.fake_hand import hand
+from fake_hand import hand
 
 DT = 1 / 60
 scl = 100.0
