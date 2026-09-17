@@ -4,7 +4,7 @@ Downloads the MediaPipe hand-landmark model that hand_tracker.py needs
 (the app will not start without models/hand_landmarker.task).
 
 Usage:
-    python scripts/fetch_model.py
+    python fetch_model.py
 
 The model is gitignored because it is a ~8 MB binary asset downloaded from
 Google; fetch it once after cloning.
@@ -19,7 +19,7 @@ URL = (
     "hand_landmarker/float16/1/hand_landmarker.task"
 )
 TARGET = os.path.join(
-    os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
+    os.path.dirname(os.path.abspath(__file__)),
     "models",
     "hand_landmarker.task",
 )
