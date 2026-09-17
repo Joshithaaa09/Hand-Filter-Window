@@ -183,12 +183,7 @@ tests/              synthetic-hand test suite (no camera required)
   automatically (`mp4v`/`avc1` MP4, or `MJPG`/`XVID` AVI). If it still won't
   open, try `--record-out test.avi`.
 
-## License
-
-Distributed under the [MIT License](LICENSE). Copyright (c) 2026 **Ali Zain**.
-
----
 
 <p align="center">
-  Made with <a href="https://github.com/Ali533-blip">Ali Zain</a>
+  Made with <a href="https://github.com/Joshithaaa09">Joshitha Garapati</a>
 </p>
