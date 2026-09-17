@@ -50,8 +50,8 @@ keeps working whether you are close to the camera or further back.
 ### 1. Clone & set up a virtual environment
 
 ```bash
-git clone https://github.com/Ali533-blip/hand-filter-window.git
-cd hand-filter-window
+git clone https://github.com/Joshithaaa09/Hand-Filter-Window.git
+cd Hand-Filter-Window
 
 python -m venv .venv
 .venv\Scripts\activate        # Windows
