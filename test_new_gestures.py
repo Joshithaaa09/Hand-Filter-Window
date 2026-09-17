@@ -7,7 +7,7 @@ import numpy as np
 
 from gestures import hand_centroid
 from ball import BallSystem, STATE_HELD, STATE_HOP, STATE_FLIGHT, STATE_PUMP, STATE_TWIN
-from tests.fake_hand import hand
+from fake_hand import hand
 
 DT = 1 / 60
 scl = 100.0
